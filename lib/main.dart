@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-          scaffoldBackgroundColor: Colors.white, primarySwatch: Colors.blue),
+          scaffoldBackgroundColor: const Color.fromARGB(255, 234, 237, 240), primarySwatch: Colors.blue),
       home: const Rootpage(),
     );
   }
@@ -33,7 +33,7 @@ class _RootpageState extends State<Rootpage> {
         // children: [
         body: Column(
       children: [
-        Container(
+        SizedBox(
           height: 120,
           child: Image.asset('images/scope.png'),
         ),
